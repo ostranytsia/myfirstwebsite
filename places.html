@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Найкращі місця</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- text-align - отцентрировать текст по центру, -->
+    <style>
+      .card {
+        border-radius: 1em;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 1em;
+      }
+      /* background-color - цвет заднего фона */
+      .card:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      /* margin - автоматически подстраивать карточки под устройство */
+      .card img {
+        border-radius: 50%;
+        width: 60%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand p-0" href="/">
+          <img src="logo.png" alt="Logo" width="45" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Головна</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="places.html">Найкращі місця</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <!-- row-cols-md-2: две карточки на среднем экране, row-cols-lg-3: 3 карточки на большом экране, g-5: ? -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <!-- Вставка ссылки на фотографию -->
+            <img
+              src="https://picsum.photos/id/57/300"
+              class="card-img-top"
+              alt="Kyiv"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Лондон</h5>
+              <!-- lorem20 - генирация рандомных 20ти слов -->
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+                distinctio omnis facilis vero esse placeat quas voluptas dolore
+                fuga. Assumenda?
+              </p>
+              <a
+                href="https://picsum.photos/id/57/1500"
+                class="btn btn-primary"
+                target="_blank"
+                >Відкрити фото</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/49/300"
+              class="card-img-top"
+              alt="Kyiv"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Иерусалим</h5>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+                molestias quod pariatur cupiditate voluptate, doloremque
+                nesciunt ullam placeat. Culpa, nesciunt?
+              </p>
+              <a
+                href="https://picsum.photos/id/49/1500"
+                class="btn btn-primary"
+                target="_blank"
+                >Відкрити фото</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/43/300"
+              class="card-img-top"
+              alt="Kyiv"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Нью-Йорк</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus ea exercitationem commodi eaque ipsa repellat vitae
+                accusamus excepturi obcaecati temporibus!
+              </p>
+              <a
+                href="https://picsum.photos/id/43/1500"
+                class="btn btn-primary"
+                target="_blank"
+                >Відкрити фото</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
